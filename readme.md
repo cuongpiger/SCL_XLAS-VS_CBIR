@@ -35,7 +35,7 @@
     python3 index.py --dataset dataset --index index.csv
     ```
 
-    trong đây:
+    trong đây:<br>
       - `index.py`: là file chạy để xây dựng các feature vector và tạo file `index.csv`.<br>
       - `--dataset dataset`: là cờ dùng để chỉ định folder chứa các image database, ở đây database image là `dataset`.<br>
       - `--index index.csv`: cờ `--index` là tên muốn đặt cho file để lưu các feature vector, ở đây là `index.csv`.<br>
@@ -45,7 +45,7 @@
   ```shell
   python3 search.py --index index.csv --query queries/cdmc900.jpg --result-path dataset
   ```
-  trong đây:
+  trong đây:<br>
     \- `search.py`: là file dùng để chạy chức năng tìm kiếm.<br>
     \- `--index index.csv`: chỉ định file lưu các feature vector, ở đây là file `index.csv`.<br>
     \- `--query queries/cdmc900.jpg`: là đường dẫn đến image cần tìm kiếm, ở đây query image nằm tại `queries/cdmc900.jpg`.<br>
