@@ -36,9 +36,9 @@
     ```
 
     trong đây:
-      - `index.py`: là file chạy để xây dựng các feature vector và tạo file `index.csv`
-      - `--dataset dataset`: là cờ dùng để chỉ định folder chứa các image database, ở đây database image là `dataset`.
-      - `--index index.csv`: cờ `--index` là tên muốn đặt cho file để lưu các feature vector, ở đây là `index.csv`.
+      - `index.py`: là file chạy để xây dựng các feature vector và tạo file `index.csv`.<br>
+      - `--dataset dataset`: là cờ dùng để chỉ định folder chứa các image database, ở đây database image là `dataset`.<br>
+      - `--index index.csv`: cờ `--index` là tên muốn đặt cho file để lưu các feature vector, ở đây là `index.csv`.<br>
 
 ## 3.2. Tìm kiếm trên CBIR
 * Nếu như file `index.csv` đã tồn tại, để search dùng lệnh dưới đây:
@@ -46,10 +46,10 @@
   python3 search.py --index index.csv --query queries/cdmc900.jpg --result-path dataset
   ```
   trong đây:
-    \- `search.py`: là file dùng để chạy chức năng tìm kiếm.
-    \- `--index index.csv`: chỉ định file lưu các feature vector, ở đây là file `index.csv`.
-    \- `--query queries/cdmc900.jpg`: là đường dẫn đến image cần tìm kiếm, ở đây query image nằm tại `queries/cdmc900.jpg`.
-    \- `--result-path dataset`: chỉ định thư mục chứa các hình ảnh tương ứng cho từng feature vector trong file `index.csv`, ở đây là thư mục `dataset`. Lưu ý nếu `dataset` thay đổi thì phải quay lại bước **3.1** để xây dựng lại file `index.csv`.
+    \- `search.py`: là file dùng để chạy chức năng tìm kiếm.<br>
+    \- `--index index.csv`: chỉ định file lưu các feature vector, ở đây là file `index.csv`.<br>
+    \- `--query queries/cdmc900.jpg`: là đường dẫn đến image cần tìm kiếm, ở đây query image nằm tại `queries/cdmc900.jpg`.<br>
+    \- `--result-path dataset`: chỉ định thư mục chứa các hình ảnh tương ứng cho từng feature vector trong file `index.csv`, ở đây là thư mục `dataset`. Lưu ý nếu `dataset` thay đổi thì phải quay lại bước **3.1** để xây dựng lại file `index.csv`.<br>
 
 * Sau khi chạy lên trên, nó sẽ hiện ra query image và result image được CBIR tìm ra trong `dataset`, nhấn **ENTER** để xem result image tiếp theo, mặc định là có 10 result image được đề ra.
 
